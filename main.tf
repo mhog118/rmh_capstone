@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-west-1"
-}
-
 module "Vms_app1" {
   #source = "./module/ec2-instance"
   source = "git::https://github.com/mhog118/rmh_capstone.git//ec2-instance?ref=main"
